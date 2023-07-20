@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "persnote" "\0"
+            VALUE "FileDescription", "trumecs" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "persnote" "\0"
+            VALUE "InternalName", "trumecs" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "persnote.exe" "\0"
-            VALUE "ProductName", "persnote" "\0"
+            VALUE "OriginalFilename", "trumecs.exe" "\0"
+            VALUE "ProductName", "trumecs" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

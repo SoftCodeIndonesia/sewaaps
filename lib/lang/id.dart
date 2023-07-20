@@ -1,5 +1,5 @@
 const Map<String, String> idID = {
-  "appname": "persnote",
+  "appname": "trumecs",
   "all": "semua @param",
   "you": "anda",
 };

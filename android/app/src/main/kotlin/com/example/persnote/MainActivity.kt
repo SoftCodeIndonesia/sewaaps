@@ -1,4 +1,4 @@
-package com.example.persnote
+package com.example.trumecs
 
 import io.flutter.embedding.android.FlutterActivity
 

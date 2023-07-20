@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(persnote LANGUAGES CXX)
+project(trumecs LANGUAGES CXX)
 
-set(BINARY_NAME "persnote")
+set(BINARY_NAME "trumecs")
 
 cmake_policy(SET CMP0063 NEW)
 

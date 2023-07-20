@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Persnote</string>
+	<string>trumecs</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>persnote</string>
+	<string>trumecs</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -43,5 +43,23 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is required to find out where you are</string>
+		<key>NSBluetoothPeripheralUsageDescription</key>
+			<string>Bluetooth is required to find out where you are</string>
+		<key>NSLocationAlwaysUsageDescription</key>
+			<string>Location is required to find out where you are</string>
+		<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+			<string>Location is required to find out where you are</string>
+		<key>NSBluetoothAlwaysUsageDescription</key>
+			<string>Bluetooth is required to find out where you are</string>
+	<key>WKAppBoundDomains</key>
+	<array>
+		<string>map-viewer.situm.com</string>
+	</array>			
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
 </dict>
 </plist>

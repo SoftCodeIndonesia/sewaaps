@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:persnote/config/network/api.response.dart';
+import 'package:trumecs/config/network/api.response.dart';
 
 // ignore: constant_identifier_names
 enum Method { POST, GET, PUT, DELETE, PATCH }

@@ -1,12 +1,23 @@
+import 'package:easy_localization_loader/easy_localization_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:persnote/config/localization.dart';
-import 'package:persnote/config/router/routes.dart';
+import 'package:trumecs/config/localization.dart';
+import 'package:trumecs/config/router/routes.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:sizer/sizer.dart';
+import 'package:trumecs/utils/lang/locale_keys.dart';
+import 'package:trumecs/utils/theme.data.dart';
+import 'package:easy_localization/easy_localization.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+  runApp(EasyLocalization(
+    child: const MyApp(),
+    supportedLocales: LocaleKeys.supportedLocales,
+    assetLoader: CsvAssetLoader(),
+    path: 'resources/langs/langs.csv',
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +30,7 @@ class MyApp extends StatelessWidget {
       builder: (context, orientation, deviceType) {
         return GetMaterialApp(
           useInheritedMediaQuery: true,
-          locale: Localization.locale,
+          // locale: Localization.locale,
           // supportedLocales: const [
           //   Locale('en', 'US'),
           //   Locale('id', 'ID'),
@@ -56,6 +67,11 @@ class MyApp extends StatelessWidget {
           getPages: Routes.initialize(),
           initialRoute: Routes.appRoute().name,
           defaultTransition: Transition.rightToLeft,
+          theme: AppTheme().lightTheme,
+          themeMode: ThemeMode.light,
+          localizationsDelegates: context.localizationDelegates,
+          supportedLocales: context.supportedLocales,
+          locale: context.locale,
         );
       },
     );

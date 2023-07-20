@@ -1,7 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.persnote">
+    package="com.example.trumecs">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
    <application
-        android:label="persnote"
+        android:label="trumecs"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -30,5 +33,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+   
     </application>
 </manifest>

@@ -1,5 +1,5 @@
 const Map<String, String> enUS = {
-  "appname": "persnote",
+  "appname": "trumecs",
   "all": "all @param",
   "you": "anda",
 };
